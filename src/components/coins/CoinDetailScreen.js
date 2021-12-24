@@ -1,7 +1,12 @@
 import React,{ Component } from 'react';
 import {View, Text} from 'react-native';
 
-class CoinDetaiilScreen extends Component {
+class CoinDetailScreen extends Component {
+
+    componentDidMount(){
+        console.log("coin",this.props.route.params)
+    }  
+
 
     render(){
         return(
@@ -10,4 +15,4 @@ class CoinDetaiilScreen extends Component {
     }
 }
 
-export default CoinDetaiilScreen;
+export default CoinDetailScreen;
